@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+/* 사용 css
+hover, position, opacity, transform */
+
+body {
+  margin: 0;
+  /* 수직 수평 중앙 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app-ui {
+  width: 340px;
+  height: 640px;
+  /* transform 은 같이 써주기 안그러면 나중에 쓴 코드만 적용됨 */
+  transform: rotate(-30deg) skewX(20deg);
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
+  background-color: #eee;
+}
+
+.app-ui:hover {
+  /* x축 y축 퍼짐정도 색상 */
+  box-shadow: -50px 100px 60px rgba(0, 0, 0, 0.3);
+}
+
+.app-ui img {
+  position: absolute;
+  transition: 0.5s;
+}
+
+.app-ui:hover img:nth-child(1) {
+  transform: translate(40px, -40px);
+  opacity: 0.2;
+}
+
+.app-ui:hover img:nth-child(2) {
+  transform: translate(80px, -80px);
+  opacity: 0.4;
+}
+
+.app-ui:hover img:nth-child(3) {
+  transform: translate(120px, -120px);
+  opacity: 0.6;
+}
+
+.app-ui:hover img:nth-child(4) {
+  transform: translate(160px, -160px);
+}

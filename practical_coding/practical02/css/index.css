@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+/* 사용 css
+border-radius, keyframes, animation, nth-child, flex, position */
+
+body {
+  background-color: #333;
+  /* 중앙정렬 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+}
+
+.square {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  margin: 40px;
+}
+
+.square span {
+  position: absolute;
+  width: 100%; 
+  /* width: inherit 이거랑 100% 랑 같음 */
+  height: 100%;  
+  border: 1px solid white;
+  border-radius: 40% 60% 65% 35% / 40% 45% 55% 60%;
+  /* 이렇게 border-radius 를 중첩해서 쓰면 자유로운 도형을 만들 수 있음 */
+  transition: 0.5s;
+}
+
+/* hover 색상 변화 */
+.square:nth-child(1):hover span {
+  background-color: crimson;
+  border: none;
+}
+
+.square:nth-child(2):hover span {
+  background-color: dodgerblue;
+  border: none;
+}
+
+.square:nth-child(3):hover span {
+  background-color: yellowgreen;
+  border: none;
+}
+
+/* 선 회전 */
+.square span:nth-child(1) {
+  animation: circle 6s linear infinite;
+}
+.square span:nth-child(2) {
+  animation: circle 4s linear infinite;
+  /* 시계 반대방향, 위에 infinite 뒤에 reverse 붙여도 되지만 직관적이기 위해 아래 추가함 */
+  animation-direction: reverse;
+}
+.square span:nth-child(3) {
+  animation: circle 10s linear infinite;
+}
+
+/* 원형 opacity */
+.square:hover span:nth-child(1) {
+  opacity: 0.3;
+}
+.square:hover span:nth-child(2) {
+  opacity: 0.6;
+}
+.square:hover span:nth-child(3) {
+  opacity: 0.8;
+}
+
+.square div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  text-align: center;
+  color: #fff;
+}
+
+.square div a {
+  color: #fff;
+  border-radius: 40% 60% 65% 35% / 40% 45% 55% 60%;
+  border: 1px solid #fff;
+  padding: 8px;
+}
+
+/* 애니메이션 */
+@keyframes circle {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

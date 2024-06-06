@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>아마스빈</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+</head>
+<body>
+  <header>
+    <div class="header_wrap">
+      <div class="logo"></div>
+      <!-- pc 메뉴 -->
+      <ul class="menu">
+        <li>
+          <a href="#">BRAND</a>
+          <ul class="sub-menu">
+            <li>BI</li>
+            <li>재료</li>
+            <li>캐릭터</li>
+          </ul>
+        </li>
+        <li><a href="#">MENU</a></li>
+        <li><a href="#">MEMBERSHIP</a></li>
+        <li><a href="#">가맹문의</a></li>
+        <li><a href="#">고객문의</a></li>
+      </ul>
+      <!-- 모바일, 타블렛 메뉴 -->
+      <input type="checkbox" id="trigger">
+      <label for="trigger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <ul class="tab_menu">
+        <li>
+          <input type="checkbox" id="dropdown">
+          <a href="#"><p>BRAND</p><label for="dropdown" class="xi-angle-down"></label></a>
+          <ul class="tab_sub-menu">
+            <li>BI</li>
+            <li>재료</li>
+            <li>캐릭터</li>
+          </ul>
+        </li>
+        <li><a href="#">MENU</a></li>
+        <li><a href="#">MEMBERSHIP</a></li>
+        <li><a href="#">가맹문의</a></li>
+        <li><a href="#">고객문의</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <section>
+      <input type="radio" id="banner1" name="main_banner" checked>
+      <input type="radio" id="banner2" name="main_banner">
+      <input type="radio" id="banner3" name="main_banner">
+      <div class="banner_wrap">
+        <div class="banner1">
+          <div class="banner_inner">
+            <div class="banner_img">
+              <picture>
+                <source srcset="./images/banner_sb_tab.svg" media="(max-width: 991px)">
+                <img src="./images/banner_sb.svg" alt="딸기신메뉴">
+              </picture>
+              <picture>
+                <source srcset="./images/banner_stbs_phone.png" media="(max-width: 575px)">
+                <source srcset="./images/banner_stbs_tab.png" media="(max-width: 991px)">
+                <img src="./images/banner_stbs.png" alt="딸기신메뉴" >
+              </picture>
+            </div>
+            <div class="banner_contents">
+              <h2>봄 신메뉴</h2>
+              <h1>Berry<br/>Holic</h1>
+              <p>아마스빈에서 느껴보는 봄의 맛!</p>
+              <button>메뉴 보러가기</button>
+            </div>
+          </div>
+        </div>
+        <div class="banner2">
+          <div class="banner_inner">
+            <div class="banner_img">
+              <img src="./images/banner_1L.svg" alt="1L보틀" width="539px" height="434px">
+            </div>
+            <div class="banner_contents">
+              <h3>BOTTLE</h3>
+              <h2>1L 대용량 보틀</h2>
+              <h1>"더 크게, 더 맛있게!"</h1>
+              <button>메뉴 보러가기</button>
+            </div>
+          </div>
+        </div>
+        <div class="banner3">
+          <div class="banner_inner">
+            <div class="banner_img">
+              <img src="./images/banner_bk.svg" alt="흑당버블티" width="435px" height="435px">
+              <picture>
+                <source srcset="./images/banner_blks_phone.png" media="(max-width: 575px)">
+                <source srcset="./images/banner_blks_tab.png" media="(max-width: 991px)">
+                <img src="./images/banner_blks.png" alt="흑당버블티">
+              </picture>
+            </div>
+            <div class="banner_contents">
+              <h3>베스트메뉴</h3>
+              <h2>대만 야시장 ‘흑당 버블티’</h2>
+              <h1>달콤한 흑당으로 당 충전!</h1>
+              <button>메뉴 보러가기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="banner_slider">
+        <label for="banner1"></label>
+        <label for="banner2"></label>
+        <label for="banner3"></label>
+      </div>
+    </section>
+    <section class="container">
+      <div class="title">
+        <img src="./images/best.png" alt="베스트메뉴">
+        <h1>아마스빈 <span>인기 메뉴</span></h1>
+        <p>Best Menu</p>
+      </div>
+      <div class="menu_slide">
+        <div class="slide_wrap">
+          <ul class="items">
+            <li class="item">
+              <div class="menu_img"></div>
+              <p>초코버블티</p>
+            </li>
+            <li class="item">
+              <div class="menu_img"></div>
+              <p>오레오쉐이크</p>
+            </li>
+            <li class="item">
+              <div class="menu_img"></div>
+              <p>흑당버블티</p>
+            </li>
+            <li class="item">
+              <div class="menu_img"></div>
+              <p>얼그레이밀크티</p>
+            </li>
+            <li class="item">
+              <div class="menu_img"></div>
+              <p>아메리카노</p>
+            </li>
+            <li class="item">
+              <div class="menu_img"></div>
+              <p>사하라</p>
+            </li>
+            <li class="item">
+              <div class="menu_img"></div>
+              <p>타로버블티</p>
+            </li>
+          </ul>
+        </div>
+        <div class="menu_control">
+          <span class="xi-angle-left prev"></span>
+          <span class="xi-angle-right next"></span>
+        </div>
+        <button class="menu_more"><a href="">전체메뉴보기</a></button>
+      </div>
+    </section>
+    <section class="container">
+      <div class="delivery">
+        <div class="delivery_wrap">
+          <div class="delivery_contents">
+            <p>아마스빈,<br/>
+              이제 배달로 받아보세요!</p>
+            <div class="delivery_icons">
+              <img src="./images/dv_icon1.png" alt="배달특급">
+              <img src="./images/dv_icon2.png" alt="쿠팡이츠">
+              <img src="./images/dv_icon3.png" alt="배달의민족">
+              <img src="./images/dv_icon4.png" alt="요기요">
+            </div>
+          </div>
+          <div class="delivery_img">
+            <img src="./images/delivery.png" alt="아마스빈배달">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container">
+      <div class="beverages">
+        <div class="beverages_wrap">
+          <div class="beverages_title">
+            <h1>좋은 음료는 좋은 재료에서</h1>
+            <p>We make good beverages</p>
+          </div>
+          <div class="beverages_contents">
+            <div class="content">
+              <img src="./images/make1.jpg" alt="하동잎">
+              <div class="content_text">
+                <h3>100% 하동잎</h3>
+                <p>왕의 녹차 경남 하동의 말차를 참가물 없이
+                  100% 녹차잎만 갈아 낸 원료로 사용합니다.</p>
+                <div class="matcha"></div>
+              </div>
+            </div>
+            <div class="content">
+              <img src="./images/make2.jpg" alt="생요거트">
+              <div class="content_text">
+                <h3>목장 생요거트</h3>
+                <p>요거트 파우더가 아닌 직접 발효시켜 만든 아마스빈만의 진한 생요거트 맛을 느껴보세요.</p>
+                <div class="matcha"></div>
+              </div>
+            </div>
+            <div class="content">
+              <img src="./images/make3.jpg" alt="생과일">
+              <div class="content_text">
+                <h3>과일주스 버블티</h3>
+                <p>신선한 생과일을 사용해 더욱 맛있습니다.</p>
+                <div class="matcha"></div>
+              </div>
+            </div>
+            <div class="content">
+              <img src="./images/make4.jpg" alt="동시농가코페">
+              <div class="content_text">
+                <h3>동시농가코페 로스터리</h3>
+                <p>City Farm House Cafe Roastery</p>
+                <div class="matcha"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer_wrap">
+      <div class="footer_top">
+        <div class="footer_logo">
+          <img src="./images/footer_logo.svg" alt="아마스빈">
+        </div>
+        <div class="footer_info">
+          <span>
+            <p>(주) 비케이컴퍼니 대표이사 이욱기</p>
+            <p>사업자등록번호:605-86-27507</p>
+            <p>서울,경기,충청도 가맹문의:1899-8603</p>
+            <p>부산 진구 중앙대로 666번길 17 8층</p>
+          </span>
+          <span>
+            <p>amasvin_sns@naver.com</p>
+            <p>TEL:1899-8608</p>
+            <p>전국 가맹문의:1899-8608</p>
+          </span>
+        </div>
+      </div>
+      <p>©BKC CO.LTD ALL Rights Reserved</p>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./js/custom.js"></script>
+</body>
+</html>

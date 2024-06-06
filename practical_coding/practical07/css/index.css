@@ -1,0 +1,62 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  line-height: 1.5em;
+  margin: 0;
+  background: linear-gradient(90deg, #DCE35B, #45B649);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.gnb {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #00000015;
+  padding-bottom: 10px;
+}
+
+.gnb a {
+  width: 80px;
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  color: #222;
+}
+
+.gnb a span {
+  /* position absolute를 주면 어떤 요소든 inline-block으로 변함 */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+
+.gnb a span:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+.gnb a span:nth-child(2) {
+  /* top:100% 주면 부모요소의 끝자락 */
+  top: 100%;
+  left: 0;
+  color: #45B649;
+}
+
+.gnb a:hover span:nth-child(1) {
+  top: -100%;
+}
+.gnb a:hover span:nth-child(2) {
+  top: 0;
+}
